@@ -1,8 +1,5 @@
 
 # coding: utf-8
-
-
-
 import pandas as pd
 from splinter import Browser
 from splinter.exceptions import ElementDoesNotExist
@@ -91,10 +88,6 @@ def scrape():
     html_table = df.to_html(header=False, index= False)
     #print(html_table)
 
-
-
-
-
     # ## Mars Hemispheres
 
     base= 'https://astrogeology.usgs.gov'
@@ -143,5 +136,5 @@ def scrape():
  # return mars_data dict
     return mars_data
 
-if __name__ == "__main__":
-    print(scrape())
+#if __name__ == "__main__":
+#    print(scrape())
